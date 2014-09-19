@@ -24,7 +24,11 @@
     "repositories" : [
         {
             "type": "vcs",
-            "url": "https://github.com/impresspages/ImpressPagesBundle"
+            "url": "https://github.com/meskis/ImpressPagesBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/meskis/ImpressPages"
         }
     ],
     "require-dev": {
