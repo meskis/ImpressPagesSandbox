@@ -625,6 +625,58 @@
             "time": "2014-07-11 03:05:53"
         },
         {
+            "name": "egeloen/json-builder",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/egeloen/ivory-json-builder.git",
+                "reference": "0395f06db7bbb3c240667ab5f3152151051fb567"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/egeloen/ivory-json-builder/zipball/0395f06db7bbb3c240667ab5f3152151051fb567",
+                "reference": "0395f06db7bbb3c240667ab5f3152151051fb567",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.3.0",
+                "symfony/property-access": "~2.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ivory\\JsonBuilder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric GELOEN",
+                    "email": "geloen.eric@gmail.com"
+                }
+            ],
+            "description": "JSON builder with escaping control for PHP 5.3+",
+            "keywords": [
+                "Escape",
+                "builder",
+                "json"
+            ],
+            "time": "2014-08-12 00:30:56"
+        },
+        {
             "name": "impresspages/impresspages",
             "version": "dev-master",
             "source": {
@@ -676,26 +728,34 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/meskis/ImpressPagesBundle.git",
-                "reference": "5f51df30c39dc73d68f161d80709dcf997a64945"
+                "reference": "babfe73df35095d418ae846273ccf871abae5b00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/meskis/ImpressPagesBundle/zipball/5f51df30c39dc73d68f161d80709dcf997a64945",
-                "reference": "5f51df30c39dc73d68f161d80709dcf997a64945",
+                "url": "https://api.github.com/repos/meskis/ImpressPagesBundle/zipball/babfe73df35095d418ae846273ccf871abae5b00",
+                "reference": "babfe73df35095d418ae846273ccf871abae5b00",
                 "shasum": ""
             },
             "require": {
-                "impresspages/impresspages": "dev-master",
-                "symfony/framework-bundle": "*"
+                "egeloen/json-builder": "~1.0.0",
+                "php": ">=5.3.3",
+                "symfony/form": "~2.2",
+                "symfony/framework-bundle": "~2.2"
             },
             "require-dev": {
-                "mockery/mockery": "0.9.0",
-                "phpunit/phpunit": ">=3.7, <4"
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6",
+                "twig/twig": "~1.12"
             },
-            "type": "library",
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "ImpressPages\\ImpressPagesBundle": "src/"
+                "psr-4": {
+                    "ImpressPages\\ImpressPagesBundle\\": ""
                 }
             },
             "license": [
@@ -705,13 +765,16 @@
                 {
                     "name": "Martynas Eskis",
                     "email": "eskis.martynas@gmail.com"
+                },
+                {
+                    "name": "Mangirdas Skripka",
+                    "email": "mangirdas@impresspage.org"
                 }
             ],
-            "description": "ImpressPages integration for Symfony2",
             "support": {
                 "source": "https://github.com/meskis/ImpressPagesBundle/tree/master"
             },
-            "time": "2014-09-18 17:36:01"
+            "time": "2014-09-18 20:35:17"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1264,20 +1327,22 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.0.1",
+            "version": "v1.2.2",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "fdba214b1e087c149843bde976263c53ac10c975"
+                "reference": "d4d85d6055b87f394d941b45ddd3a9173e1e3d2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/fdba214b1e087c149843bde976263c53ac10c975",
-                "reference": "fdba214b1e087c149843bde976263c53ac10c975",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/d4d85d6055b87f394d941b45ddd3a9173e1e3d2a",
+                "reference": "d4d85d6055b87f394d941b45ddd3a9173e1e3d2a",
                 "shasum": ""
             },
             "require": {
+                "ext-intl": "*",
+                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
             },
@@ -1307,7 +1372,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-10-04 09:12:07"
+            "time": "2014-07-25 09:58:17"
         },
         {
             "name": "symfony/monolog-bundle",
