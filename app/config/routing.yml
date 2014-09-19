@@ -1,0 +1,2 @@
+impresspages_bundle:
+    resource: "@ImpressPagesBundle/Resources/config/routing.yml"
