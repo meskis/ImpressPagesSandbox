@@ -28,7 +28,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/meskis/ImpressPages"
+            "url": "https://github.com/impresspages/ImpressPages"
         }
     ],
     "require-dev": {
