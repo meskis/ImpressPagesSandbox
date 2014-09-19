@@ -25,6 +25,7 @@ class DemoController extends Controller
      */
     public function indexAction()
     {
+        // Testing autoloader for IP
         new Application('test');
 
         return array();
