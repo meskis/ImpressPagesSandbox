@@ -2,6 +2,9 @@
 
 namespace Acme\DemoBundle\Controller;
 
+use ImpressPages\ImpressPagesBundle\Controller\DefaultController;
+use Ip\Application;
+use Ip\Content;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -22,6 +25,8 @@ class DemoController extends Controller
      */
     public function indexAction()
     {
+        new Application('test');
+
         return array();
     }
 }
