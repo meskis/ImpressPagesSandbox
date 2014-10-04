@@ -42,4 +42,23 @@ class DemoController extends Controller
 
         return array('renderedPage' => $renderedPage, 'renderedManager' => $renderedManager);
     }
+
+
+    public function editAction()
+    {
+        //TODO change to unpriviledged user
+        \Ip\Internal\Admin\Service::setAdminLogin('admin');
+
+
+        /**
+         * @var $pageManager \ImpressPages\ImpressPagesBundle\Renderer\EditorRenderer
+         */
+        $editorRenderer = $this->get('impresspages_bundle.renderer.editor');
+        $renderedManager = $editorRenderer->render(5);
+
+
+
+        echo $renderedManager;exit;
+
+    }
 }

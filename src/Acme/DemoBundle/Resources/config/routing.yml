@@ -2,3 +2,6 @@ _demo:
     resource: "@AcmeDemoBundle/Controller/DemoController.php"
     type:     annotation
     prefix:   /test
+demo_edit:
+    path:      /edit
+    defaults:  { _controller: AcmeDemoBundle:Demo:edit }
