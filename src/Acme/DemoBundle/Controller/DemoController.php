@@ -28,6 +28,11 @@ class DemoController extends Controller
         // Testing autoloader for IP
         new Application('test');
 
-        return array();
+        /**
+         * @var $pageRenderer \ImpressPages\ImpressPagesBundle\Renderer\PageRenderer
+         */
+        $pageRenderer = $this->get('impresspages_bundle.renderer.page');
+        $content = $pageRenderer->render(5);
+        return array('content' => $content);
     }
 }
