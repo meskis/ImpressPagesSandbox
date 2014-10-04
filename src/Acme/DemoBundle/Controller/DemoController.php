@@ -32,7 +32,14 @@ class DemoController extends Controller
          * @var $pageRenderer \ImpressPages\ImpressPagesBundle\Renderer\PageRenderer
          */
         $pageRenderer = $this->get('impresspages_bundle.renderer.page');
-        $content = $pageRenderer->render(5);
-        return array('content' => $content);
+        $renderedPage = $pageRenderer->render(5);
+
+        /**
+         * @var $pageManager \ImpressPages\ImpressPagesBundle\Renderer\EditorRenderer
+         */
+        $editorRednerer = $this->get('impresspages_bundle.renderer.editor');
+        $renderedManager = $editorRednerer->render(5);
+
+        return array('renderedPage' => $renderedPage, 'renderedManager' => $renderedManager);
     }
 }
